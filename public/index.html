@@ -4,10 +4,40 @@
   <meta charset="utf-8">
   <title>Indigo</title>
   <link rel="stylesheet" href="css/app.css">  
-  <link rel="stylesheet" href="css/bootstrap.min.css">  
+  <link rel="stylesheet" href="css/bootstrap.css">  
 </head>
 <body>
-  <p>Indigo</p>
+  <header class="header">
+    <div class="contenedor">      
+      <span class="indigoIcon icon-indigo"></span>
+      <figure class="imag">
+        <img src="../images/indigo.png" alt="" width="65" height="26">
+      </figure>
+      <div class="header-session right">                    
+        <figure class="avatar round left">
+          <img src="../images/avatar.png" alt="@daguiheso" width="38" height="38">     
+        </figure>
+        <div class="left username">@daguiheso</div>
+      </div>
+      <div class="header-alerts right">                   
+        <span class="icon-mail email-icon"></span>
+        <span class="icon-bell "></span>
+      </div>
+
+      <div class="header-search right">
+        <!-- <form action="" class="relative">
+          <span class="icon-search search-icon"></span>
+          <input type="text" class="input">
+        </form> -->
+        <form class="navbar-form navbar-left relative" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control search" placeholder="Search">
+          </div>
+      </form>
+      </div>                      
+    </div>    
+  </header>
+  <section class="mainMenu"></section>
   <script src="js/lib/angular.min.js"></script>
   <script src="js/lib/angular-route.min.js"></script>
   <script src="js/lib/angular-mocks.min.js"></script>
