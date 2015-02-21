@@ -3,7 +3,15 @@
 /* App Module */
 
 (function() {
-	angular.module('indigo', [
+	var app = angular.module('indigo', [
+		'ngRoute',
 		'indigo.directives'
 	]);
+
+	app.config(['$routeProvider',function ($routeProvider) {
+		$routeProvider
+			.when('/', {
+				templateUrl: 'views/dashboard.html'
+			})
+	}]);
 })();
