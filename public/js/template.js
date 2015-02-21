@@ -3,7 +3,8 @@
 /* Directives */
 
 (function() {
-	angular.module('indigo.directives', [])
+	angular.module('indigoTemplate', [])
+	
 		.directive('indigoHeader', function() {
 			return {
 				restrict: 'E', 
