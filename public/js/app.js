@@ -54,4 +54,17 @@
 				redirectTo: '/dashboard'
 			});
 	}]);
+
+	app.controller('MainTabsController', ['$scope', function ($scope) {
+		$scope.tab = 1;
+
+		$scope.selectTab = function (tab) {
+			$scope.tab = tab;
+		}
+
+		$scope.isActive = function (tab) {
+			return tab === $scope.tab;
+		};
+	}]);
+
 })();
