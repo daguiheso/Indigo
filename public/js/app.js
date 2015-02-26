@@ -5,7 +5,7 @@
 (function() {
 	var app = angular.module('indigo', [
 		'ngRoute',
-		'indigoTemplate',
+		'indigoDirectives',
 		'indigoDashboard',
 		'indigoInventory',
 		'indigoMovements',
@@ -19,35 +19,35 @@
 	app.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider
 			.when('/dashboard', {
-				templateUrl: 'views/dashboard.html'
+				templateUrl: 'modules/dashboard/views/dashboard.html'
 			}) 
 
 			.when('/inventory', {
-				templateUrl: 'views/inventory.html'
+				templateUrl: 'modules/inventory/views/inventory.html'
 			}) 
 
 			.when('/movements', {
-				templateUrl: 'views/movements.html'
+				templateUrl: 'modules/movements/views/movements.html'
 			}) 
 
 			.when('/cash', {
-				templateUrl: 'views/cash.html'
+				templateUrl: 'modules/cash/views/cash.html'
 			}) 
 
 			.when('/warrant', {
-				templateUrl: 'views/warrant.html'
+				templateUrl: 'modules/warrant/views/warrant.html'
 			}) 
 
 			.when('/wallet', {
-				templateUrl: 'views/wallet.html'
+				templateUrl: 'modules/wallet/views/wallet.html'
 			}) 
 
 			.when('/medicalhistory', {
-				templateUrl: 'views/medicalhistory.html'
+				templateUrl: 'modules/medicalhistory/views/medicalhistory.html'
 			}) 
 
 			.when('/administration', {
-				templateUrl: 'views/administration.html'
+				templateUrl: 'modules/administration/views/administration.html'
 			}) 
 
 			.otherwise({

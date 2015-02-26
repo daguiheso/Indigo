@@ -3,7 +3,7 @@
 /* Directives */
 
 (function() {
-	angular.module('indigoTemplate', [])
+	angular.module('indigoDirectives', [])
 	
 		.directive('indigoHeader', function() {
 			return {
