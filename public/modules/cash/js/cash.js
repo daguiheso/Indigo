@@ -3,6 +3,6 @@
 /* Cash */
 
 (function() {
-	angular.module('indigoCash', [])
+	angular.module('indigo.cash', [])
 		
 })();

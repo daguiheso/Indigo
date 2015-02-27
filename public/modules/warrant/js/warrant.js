@@ -3,6 +3,6 @@
 /* Warrant */
 
 (function() {
-	angular.module('indigoWarrant', [])
+	angular.module('indigo.warrant', [])
 		
 })();

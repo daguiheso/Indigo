@@ -3,6 +3,6 @@
 /* MedicalHistory */
 
 (function() {
-	angular.module('indigoMedicalHistory', [])
+	angular.module('indigo.medicalHistory', [])
 		
 })();

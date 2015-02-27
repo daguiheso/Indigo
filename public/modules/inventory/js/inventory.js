@@ -3,6 +3,6 @@
 /* Inventory */
 
 (function() {
-	angular.module('indigoInventory', [])
+	angular.module('indigo.inventory', [])
 		
 })();

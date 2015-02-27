@@ -5,21 +5,22 @@
 (function() {
 	var app = angular.module('indigo', [
 		'ngRoute',
-		'indigoDirectives',
-		'indigoDashboard',
-		'indigoInventory',
-		'indigoMovements',
-		'indigoCash',
-		'indigoWarrant',
-		'indigoWallet',
-		'indigoMedicalHistory',
-		'indigoAdministration'
+		'indigo.directives',
+		'indigo.dashboard',
+		'indigo.inventory',
+		'indigo.movements',
+		'indigo.cash',
+		'indigo.warrant',
+		'indigo.wallet',
+		'indigo.medicalHistory',
+		'indigo.administration'
 	]);
 
 	app.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider
 			.when('/dashboard', {
-				templateUrl: 'modules/dashboard/views/dashboard.html'
+				templateUrl: 'modules/dashboard/views/dashboard.html',
+				// controller: 'MainController'
 			}) 
 
 			.when('/inventory', {

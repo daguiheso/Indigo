@@ -3,6 +3,6 @@
 /* Movements */
 
 (function() {
-	angular.module('indigoMovements', [])
+	angular.module('indigo.movements', [])
 		
 })();

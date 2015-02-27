@@ -3,6 +3,6 @@
 /* Directives */
 
 (function() {
-	angular.module('indigoDashboard', [])
+	angular.module('indigo.dashboard', [])
 		
 })();

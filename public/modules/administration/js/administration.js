@@ -3,6 +3,6 @@
 /* Administration */
 
 (function() {
-	angular.module('indigoAdministration', [])
+	angular.module('indigo.administration', [])
 		
 })();

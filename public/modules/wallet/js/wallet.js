@@ -3,6 +3,6 @@
 /* Wallet */
 
 (function() {
-	angular.module('indigoWallet', [])
+	angular.module('indigo.wallet', [])
 		
 })();
