@@ -1,12 +1,7 @@
 <section class="mainMenu" ng-controller="MainController">
-	<ul class="nav nav-pills nav-stacked">
-	  <li ng-class="{ active : isActive(1) }"><a ng-click="selectTab(1)" href="#/dashboard">Tablero</a></li>
-	  <li ng-class="{ active : isActive(2) }"><a ng-click="selectTab(2)" href="#/inventory">Inventario</a></li>
-	  <li ng-class="{ active : isActive(3) }"><a ng-click="selectTab(3)" href="#/movements">Movimientos</a></li>
-	  <li ng-class="{ active : isActive(4) }"><a ng-click="selectTab(4)" href="#/cash">Caja</a></li>
-	  <li ng-class="{ active : isActive(5) }"><a ng-click="selectTab(5)" href="#/warrant">Garantias</a></li>
-	  <li ng-class="{ active : isActive(6) }"><a ng-click="selectTab(6)" href="#/wallet">Cartera</a></li>
-	  <li ng-class="{ active : isActive(7) }"><a ng-click="selectTab(7)" href="#/medicalhistory">Historias Clinicas</a></li>
-	  <li ng-class="{ active : isActive(8) }"><a ng-click="selectTab(8)" href="#/administration">Administración</a></li>
+	<ul ng-repeat="item in maint" class="nav nav-pills nav-stacked">
+	  <li ng-repeat="(key, value) in item">
+	  	<a ng-click="selectTab({{value}})" ng-href="#/{{key | normalize}}">{{key}}</a>
+	  </li>
 	</ul>	
 </section>

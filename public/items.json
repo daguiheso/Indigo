@@ -1,0 +1,12 @@
+[
+  {
+    "Tablero": 1,
+    "Inventario": 2,
+    "Movimientos": 3,
+    "Caja": 4,
+    "Garantias": 5,
+    "Cartera": 6,
+    "Historias Clinicas": 7,
+    "Administracion": 8
+  }
+]

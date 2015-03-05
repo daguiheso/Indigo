@@ -1,6 +1,6 @@
 'use strict';
 
-/* Directives */
+/* Directives Indigo */
 
 (function() {
 	angular.module('indigo.directives', [])

@@ -9,6 +9,7 @@
 		'indigo.controllers',
 		'indigo.directives',
 		'indigo.services',
+		'indigo.filters',
 		'indigo.inventory',
 		'indigo.movements',
 		'indigo.cash',
@@ -20,15 +21,15 @@
 
 	app.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider
-			.when('/dashboard', {templateUrl: 'views/dashboard.html',	controller: 'MainController'}) 
-			.when('/inventory', {templateUrl: 'modules/inventory/views/inventory.html'}) 
-			.when('/movements', {templateUrl: 'modules/movements/views/movements.html'}) 
-			.when('/cash', {templateUrl: 'modules/cash/views/cash.html'}) 
-			.when('/warrant', {templateUrl: 'modules/warrant/views/warrant.html'}) 
-			.when('/wallet', {templateUrl: 'modules/wallet/views/wallet.html'}) 
-			.when('/medicalhistory', {templateUrl: 'modules/medicalhistory/views/medicalhistory.html'}) 
-			.when('/administration', {templateUrl: 'modules/administration/views/administration.html'}) 
-			.otherwise({redirectTo: '/dashboard'});
+			.when('/tablero', {templateUrl: 'views/dashboard.html',	controller: 'MainController'}) 
+			.when('/inventario', {templateUrl: 'modules/inventory/views/inventory.html'}) 
+			.when('/movimientos', {templateUrl: 'modules/movements/views/movements.html'}) 
+			.when('/caja', {templateUrl: 'modules/cash/views/cash.html'}) 
+			.when('/garantias', {templateUrl: 'modules/warrant/views/warrant.html'}) 
+			.when('/cartera', {templateUrl: 'modules/wallet/views/wallet.html'}) 
+			.when('/historiasclinicas', {templateUrl: 'modules/medicalhistory/views/medicalhistory.html'}) 
+			.when('/administracion', {templateUrl: 'modules/administration/views/administration.html'})
+			.otherwise({redirectTo: '/tablero'});
 	}]);
 
 })();
