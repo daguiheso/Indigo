@@ -3,12 +3,12 @@
 /* App Module */
 
 (function() {
+
 	var app = angular.module('indigo', [
 		'ngRoute',
 		'indigo.controllers',
 		'indigo.directives',
 		'indigo.services',
-		'indigo.dashboard',
 		'indigo.inventory',
 		'indigo.movements',
 		'indigo.cash',
@@ -20,7 +20,7 @@
 
 	app.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider
-			.when('/dashboard', {templateUrl: 'modules/dashboard/views/dashboard.html',	controller: 'MainController'}) 
+			.when('/dashboard', {templateUrl: 'views/dashboard.html',	controller: 'MainController'}) 
 			.when('/inventory', {templateUrl: 'modules/inventory/views/inventory.html'}) 
 			.when('/movements', {templateUrl: 'modules/movements/views/movements.html'}) 
 			.when('/cash', {templateUrl: 'modules/cash/views/cash.html'}) 
@@ -30,7 +30,5 @@
 			.when('/administration', {templateUrl: 'modules/administration/views/administration.html'}) 
 			.otherwise({redirectTo: '/dashboard'});
 	}]);
-
-	
 
 })();
