@@ -5,9 +5,9 @@
 (function() {
 	angular.module('indigo.controllers', [])
 
-	.controller('MainController', ['$scope', 'indigoService', function ($scope, indigoService) {
+	.controller('DashboardController', ['$scope', 'indigoDashboardService', function ($scope, indigoDashboardService) {
 
-		indigoService.all().then(function (data) {
+		indigoDashboardService.all().then(function (data) {
 			$scope.maint = data;
 		})
 
@@ -22,5 +22,4 @@
 		};
 
 	}])
-	
 })();

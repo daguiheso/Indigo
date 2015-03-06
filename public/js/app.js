@@ -21,7 +21,7 @@
 
 	app.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider
-			.when('/tablero', {templateUrl: 'views/dashboard.html',	controller: 'MainController'}) 
+			.when('/tablero', {templateUrl: 'views/dashboard.html',	controller: 'DashboardController'}) 
 			.when('/inventario', {templateUrl: 'modules/inventory/views/inventory.html'}) 
 			.when('/movimientos', {templateUrl: 'modules/movements/views/movements.html'}) 
 			.when('/caja', {templateUrl: 'modules/cash/views/cash.html'}) 
