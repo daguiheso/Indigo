@@ -1,36 +1,12 @@
 <h1>Tablero</h1>
-<div class="panel panel-info panel-sucursales">
-  <div class="panel-heading">
-    <h3 class="panel-title">Sucursales</h3>
-  </div>
-</div>
-<div class="panel panel-info panel-estadisticas">
-  <div class="panel-heading">
-    <h3 class="panel-title">Estadisticas</h3>
-  </div>
-</div>
-<div class="panel panel-info panel-inventario">
-  <div class="panel-heading">
-    <h3 class="panel-title">Inventario</h3>
-  </div>
-</div>
-<div class="panel panel-info panel-comisiones">
-  <div class="panel-heading">
-    <h3 class="panel-title">Comisiones</h3>
-  </div>
-</div>    
-<div class="panel panel-info panel-empleados">
-  <div class="panel-heading">
-    <h3 class="panel-title">Empleados</h3>
-  </div>
-</div>
-<div class="panel panel-info panel-alistado">
-  <div class="panel-heading">
-    <h3 class="panel-title">Alistado</h3>
-  </div>
-</div>
-<div class="panel panel-info panel-generador">
-  <div class="panel-heading">
-    <h3 class="panel-title">Generador de Documentos</h3>
-  </div>
-</div>
+<span ng-repeat="item in dash">
+  <span ng-repeat="subitem in item">
+    <span ng-repeat="subsubitem in subitem">
+      <div ng-repeat="(key, value) in subsubitem" class="panel panel-info panel-{{key | normalize}}">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{key}}</h3>
+        </div>
+      </div>
+    </span>
+  </span>
+</span>

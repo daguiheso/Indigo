@@ -7,8 +7,12 @@
 
 	.controller('DashboardController', ['$scope', 'indigoDashboardService', function ($scope, indigoDashboardService) {
 
-		indigoDashboardService.all().then(function (data) {
-			$scope.maint = data;
+		indigoDashboardService.allMain().then(function (data) {
+			$scope.main = data;
+		})
+
+		indigoDashboardService.allDashboard().then(function (data) {
+			$scope.dash = data;
 		})
 
 		$scope.tab = 1;

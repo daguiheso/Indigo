@@ -1,0 +1,27 @@
+[
+  {
+    "dashboard": [
+      {
+        "Sucursales": 1
+      },
+      {
+        "Estadisticas": 2
+      },
+      {
+        "Inventario": 3
+      },
+      {
+        "Comisiones": 4
+      },
+      {
+        "Empleados": 5
+      },
+      {
+        "Alistado": 6
+      },
+      {
+        "Generador Documentos": 7
+      }
+    ]
+  }
+]

@@ -1,5 +1,5 @@
 <section class="mainMenu" ng-controller="DashboardController">
-	<ul ng-repeat="item in maint" class="nav nav-pills nav-stacked">
+	<ul ng-repeat="item in main" class="nav nav-pills nav-stacked">
 	  <li ng-repeat="(key, value) in item">
 	  	<a ng-click="selectTab({{value}})" ng-href="#/{{key | normalize}}">{{key}}</a>
 	  </li>
