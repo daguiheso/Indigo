@@ -1,6 +1,6 @@
 <h1>Inventario</h1>
 
-<div class="" ng-controller="arrowController">
+<div class="" ng-controller="TabsController">
 	
 	<!-- <div class="btn-group">
 	  <a href="#" class="btn btn-default">Default</a>
@@ -14,53 +14,64 @@
 	  </ul>
 	</div> -->
 
-	<div class="btn-group">
-	  <a href="#/inventario" class="btn btn-primary">Productos</a>
-	  <a href="" ng-hide="show" ng-click="toggle()" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+	<div class="btn-group" ng-class="{ open : isActive(1) }">
+	  <a href="" class="btn btn-primary">Productos</a>
+	  <a ng-click="selectTab(1)" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
 	  <ul ng-show="show" class="dropdown-menu">
-	    <li><a href="">Action</a></li>
-	    <li><a href="">Another action</a></li>
-	    <li><a href="">Something else here</a></li>
+	    <li><a href="">n/a</a></li>
+	    <li><a href="">n/a</a></li>
 	    <li class="divider"></li>
-	    <li><a href="">Separated link</a></li>
+	    <li><a href="">n/a</a></li>
 	  </ul>
 	</div>
 
-	<div class="btn-group">
-	  <a href="#" class="btn btn-success">Alistado</a>
-	  <a href="" ng-click="toggle()" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+	<div class="btn-group" ng-class="{ open : isActive(2) }">
+	  <a class="btn btn-success">Alistado Bases</a>
+	  <a  ng-click="selectTab(2)" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
 	  <ul ng-show="show" class="dropdown-menu">
-	    <li><a href="#">Action</a></li>
-	    <li><a href="#">Another action</a></li>
-	    <li><a href="#">Something else here</a></li>
+	    <li><a href="#">n/a</a></li>
+	    <li><a href="#">n/a</a></li>
+	    <li><a href="#">n/a</a></li>
 	    <li class="divider"></li>
-	    <li><a href="#">Separated link</a></li>
+	    <li><a href="#">n/a</a></li>
 	  </ul>
 	</div>
 
-	<!-- <div class="btn-group">
-	  <a href="#" class="btn btn-info">Info</a>
-	  <a href="" ng-click="toggle()" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+	<div class="btn-group" ng-class="{ open : isActive(3) }">
+	  <a class="btn btn-warning">CAMBIOS</a>
+	  <a  ng-click="selectTab(3)" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
 	  <ul ng-show="show" class="dropdown-menu">
-	    <li><a href="#">Action</a></li>
-	    <li><a href="#">Another action</a></li>
-	    <li><a href="#">Something else here</a></li>
+	    <li><a href="#">n/a</a></li>
+	    <li><a href="#">n/a</a></li>
+	    <li><a href="#">n/a</a></li>
 	    <li class="divider"></li>
-	    <li><a href="#">Separated link</a></li>
+	    <li><a href="#">n/a</a></li>
 	  </ul>
 	</div>
 
-	<div class="btn-group">
-	  <a href="#" class="btn btn-warning">Warning</a>
-	  <a href="" ng-click="toggle()" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+	<div class="btn-group" ng-class="{ open : isActive(4) }">
+	  <a class="btn btn-danger">PRESTAMOS</a>
+	  <a  ng-click="selectTab(4)" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
 	  <ul ng-show="show" class="dropdown-menu">
-	    <li><a href="#">Action</a></li>
-	    <li><a href="#">Another action</a></li>
-	    <li><a href="#">Something else here</a></li>
+	    <li><a href="#">n/a</a></li>
+	    <li><a href="#">n/a</a></li>
+	    <li><a href="#">n/a</a></li>
 	    <li class="divider"></li>
-	    <li><a href="#">Separated link</a></li>
+	    <li><a href="#">n/a</a></li>
 	  </ul>
-	</div> -->
+	</div>
+
+	<div class="btn-group" ng-class="{ open : isActive(5) }">
+	  <a class="btn btn-info">Ayuda</a>
+	  <a  ng-click="selectTab(5)" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+	  <ul ng-show="show" class="dropdown-menu">
+	    <li><a href="#">Manual Inventario</a></li>
+	    <li class="divider"></li>
+	    <li><a href="#">Acerca de Inventario</a></li>
+	  </ul>
+	</div>
+
+	
 </div>
 
 
