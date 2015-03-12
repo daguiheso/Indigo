@@ -365,3 +365,13 @@ th {
 .panel-generadordocumentos {
   background-image: url("../images/generador.png");
 }
+
+/*Inventory*/
+
+.space {
+  margin: .5em 1em;
+}
+
+.margin-top {
+  margin-top: 1em;
+}
