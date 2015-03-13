@@ -375,3 +375,8 @@ th {
 .margin-top {
   margin-top: 1em;
 }
+
+.center {
+  padding: 2em;
+  text-align: center;
+}

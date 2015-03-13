@@ -11,15 +11,14 @@
 			$scope.selectTab = function (tab) {
 				$scope.tab = tab;
 	   	        $scope.show = !$scope.show;
-
 			};
 
 			$scope.isActive = function (tab) {
 				return tab === $scope.tab;
 			}
 
-		    $scope.toggle = function () {
-		    	$scope.show = !$scope.show;
-		    };
+		    // $scope.toggle = function () {
+		    // 	$scope.show = !$scope.show;
+		    // };
 		}]); 
 })();
