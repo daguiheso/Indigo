@@ -233,6 +233,10 @@ th {
 }
 .header {
   display: block;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
 }
 .header .contenedor {
   padding: 0px 20px;
