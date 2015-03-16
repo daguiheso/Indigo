@@ -240,6 +240,7 @@ th {
   right: 0;
   left: 0;
   top: 0;
+  z-index: 10;
 }
 .header .contenedor {
   padding: 0px 20px;
