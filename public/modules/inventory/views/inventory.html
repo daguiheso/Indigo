@@ -8,98 +8,101 @@
 	<a href="#" class="btn btn-info btn-lg space">AYUDA</a>
 </div>
 
-<div class="jumbotron margin-top space">
+<img ng-src="modules/inventory/images/inventory.jpg" alt="" class="imginventory">
+<span class="col-md-1"></span>
+<div class="jumbotron space margin-top col-md-9">
 	<form class="form-horizontal center">
-	    <div class="form-group">
-      	<span class="col-md-2"></span>
-	      <div class="col-md-2">
-	        <select class="form-control" id="select">
-	          <option>Tipo Producto</option>
-	          <option>Base Semiterminada</option>
-	          <option>Base Terminada </option>
-	          <option>Montura</option>
-	          <option>Liquido</option>
-	          <option>Estuche</option>
-	          <option>Plaqueta</option>
-	        </select>
-	      </div>
-      	<span class="col-md-4"></span>
-	      <div class="col-md-2">
-	        <select class="form-control" id="select">
-	          <option>Clase de Lente</option>
-	          <option>Corriente</option>
-	          <option>Progresivo</option>
-	          <option>Invisible</option>
-	          <option>Flaptop</option>
-	        </select>
-	      </div>
-	    </div>
+    	<legend>Nuevo Producto</legend>
+		    <div class="form-group">
+	      	<span class="col-md-1"></span>
+		      <div class="col-md-3">
+		        <select class="form-control" id="select">
+		          <option>Tipo Producto</option>
+		          <option>Base Semiterminada</option>
+		          <option>Base Terminada </option>
+		          <option>Montura</option>
+		          <option>Liquido</option>
+		          <option>Estuche</option>
+		          <option>Plaqueta</option>
+		        </select>
+		      </div>
+	      	<span class="col-md-4"></span>
+		      <div class="col-md-3">
+		        <select class="form-control" id="select">
+		          <option>Clase de Lente</option>
+		          <option>Corriente</option>
+		          <option>Progresivo</option>
+		          <option>Invisible</option>
+		          <option>Flaptop</option>
+		        </select>
+		      </div>
+		    </div>
+	    	<legend></legend>
+		    <div class="form-group">
+	      	<span class="col-md-1"></span>
+		      <div class="col-md-3">
+			      <input class="form-control" id="focusedInput" type="text" placeholder="Nombre">
+					</div>
+		      <div class="col-md-2">
+		        <select class="form-control" id="select">
+		          <option>Material</option>
+		          <option>CR39</option>
+		          <option>POLY</option>
+		        </select>
+			    </div>
+			    <div class="col-md-3">
+		        <select class="form-control" id="select">
+		          <option>Tratamiento</option>
+		          <option>N/A</option>
+		          <option>AR</option>
+		          <option>TRANS AR</option>
+		          <option>UV</option>
+		        </select>
+			    </div>
+			    <div class="col-md-2">
+		        <select class="form-control" id="select">
+		          <option>G</option>
+		          <option>5</option>
+		          <option>6</option>
+		          <option>7</option>
+		        </select>
+			    </div>
+		    </div>
+				
+		    <div class="form-group">
+					<span class="col-md-1"></span>
+		      <div class="col-md-2">
+		        <select class="form-control" id="select">
+		          <option>Base</option>
+		          <option>1.00</option>
+		          <option>2.25</option>
+		          <option>3.25</option>
+		          <option>4.25</option>
+		          <option>5.25</option>
+		          <option>6.25</option>
+		          <option>8.00</option>
+		          <option>10.00</option>
+		        </select>
+			    </div>
+	        <div class="col-md-3">
+	  	      <input class="form-control" id="focusedInput" type="text" placeholder="Marca">
+	  			</div>
 
-	    <div class="form-group">
-      	<span class="col-md-2"></span>
-	      <div class="col-md-3">
-		      <input class="form-control" id="focusedInput" type="text" placeholder="Nombre">
+	  			<div class="col-md-3">
+		        <select class="form-control" id="select">
+		          <option>Proveedor</option>
+		          <option>PROVEEDOR 1</option>
+		          <option>PROVEEDOR 2</option>
+		          <option>PROVEEDOR 3</option>
+		          <option>PROVEEDOR 4</option>
+		          <option>PROVEEDOR 5</option>
+		          <option>PROVEEDOR 6</option>
+		        </select>
+			    </div>
 				</div>
-	      <div class="col-md-2">
-	        <select class="form-control" id="select">
-	          <option>Material</option>
-	          <option>CR39</option>
-	          <option>POLY</option>
-	        </select>
-		    </div>
-		    <div class="col-md-2">
-	        <select class="form-control" id="select">
-	          <option>Tratamiento</option>
-	          <option>N/A</option>
-	          <option>AR</option>
-	          <option>TRANS AR</option>
-	          <option>UV</option>
-	        </select>
-		    </div>
-		    <div class="col-md-1">
-	        <select class="form-control" id="select">
-	          <option>G</option>
-	          <option>5</option>
-	          <option>6</option>
-	          <option>7</option>
-	        </select>
-		    </div>
+
+
 	    </div>
-			
-	    <div class="form-group">
-				<span class="col-md-2"></span>
-	      <div class="col-md-2">
-	        <select class="form-control" id="select">
-	          <option>Base</option>
-	          <option>1.00</option>
-	          <option>2.25</option>
-	          <option>3.25</option>
-	          <option>4.25</option>
-	          <option>5.25</option>
-	          <option>6.25</option>
-	          <option>8.00</option>
-	          <option>10.00</option>
-	        </select>
-		    </div>
-        <div class="col-md-3">
-  	      <input class="form-control" id="focusedInput" type="text" placeholder="Marca">
-  			</div>
-
-  			<div class="col-md-2">
-	        <select class="form-control" id="select">
-	          <option>Proveedor</option>
-	          <option>PROVEEDOR 1</option>
-	          <option>PROVEEDOR 2</option>
-	          <option>PROVEEDOR 3</option>
-	          <option>PROVEEDOR 4</option>
-	          <option>PROVEEDOR 5</option>
-	          <option>PROVEEDOR 6</option>
-	        </select>
-		    </div>
-			</div>
-
-
-    </div>
 	</form>
 </div>
 

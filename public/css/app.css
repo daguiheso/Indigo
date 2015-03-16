@@ -231,6 +231,9 @@ th {
 .relative {
   position: relative;
 }
+.alignleft{
+  text-align: left;
+}
 .header {
   display: block;
   position: fixed;
@@ -375,12 +378,16 @@ th {
 .space {
   margin: .5em 1em;
 }
-
 .margin-top {
-  margin-top: 1em;
+  margin-top: 2em;
 }
-
 .center {
   padding: 2em;
   text-align: center;
+}
+.imginventory {
+  width: 100px;
+  position: absolute;
+  right: 7em;
+  top: 4.5em;
 }
