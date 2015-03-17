@@ -12,4 +12,11 @@
 		        return input.toLowerCase();
 		    };
   		})
+
+  		.filter('imageify', ['$filter', function ($filter) {
+		    return function (input, ext) {
+		      var url = "images/" + $filter('normalize')(input) + "." + ext || "jpg";
+		      return url;
+		    };
+  		}]);
 })();
