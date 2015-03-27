@@ -13,3 +13,28 @@ Run Indigo
 4. > grunt
 
 localhost:9000 or port assigned by grunt => browser
+
+
+modulo principal ==> indigo
+
+modulos secundarios ==> indigo.inventory
+
+                        indigo.controllers
+                        
+		                    indigo.directives
+		                    
+		                    indigo.services
+		                    
+		                    indigo.filters
+		
+		                    indigo.movements
+		                    
+		                    indigo.cash
+		                    
+		                    indigo.warrant
+		                    
+		                    indigo.wallet
+		                    
+		                    indigo.medicalHistory
+		                    
+		                    indigo.administration
